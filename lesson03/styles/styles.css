@@ -1,0 +1,213 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+}
+header{
+    background-color:#e1cca2 ;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+h1{
+   font-size: 1.8rem; 
+}
+h2{
+    font-size: 1.3rem;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+}
+span{
+    color:#9c1d25 ;
+text-transform: uppercase;
+font-weight: bold;
+}
+.logo img{
+    width: 45%;
+    margin: 25px 0 5px 0;
+}
+nav{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.navbar li{
+    margin-bottom: 10px;
+    
+}
+.navbar li:hover{
+    padding: 5px 10px;
+    background-color: aliceblue;
+    display: inline-block   ;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+    
+}
+.active{
+       padding: 5px 10px;
+    background-color:#445c6c;
+    display: inline-block   ;
+    border-radius: 20px;
+    color: aliceblue;
+}
+main{
+    text-align: center;
+    padding: 20px;
+    
+}
+.site-title{
+    margin-bottom: 15px;
+}
+.site-name{
+    margin-bottom: 15px;
+}
+.site-purpose{
+    margin-bottom: 15px;
+}
+.connect, .save{
+    margin-bottom: 15px;
+}
+footer{
+    background-color: #e1cca2;
+    text-align: center;
+   
+}
+/* Target Audience */
+.personas{
+    margin-top: 20px;
+}
+.personas h2{
+    color: #445c6c;
+    text-transform: uppercase;
+}
+.vision{
+    border: 3px solid #e1cca2;
+    padding: 20px;
+    background-color: #fcf4e5;
+    margin-bottom: 30px;
+}
+.vision h2{
+    font-style: italic;
+    color: 
+#445c6c;
+}
+
+.profile-pic{
+    transition: all 0.5s ease-in-out;
+    max-height:370px;
+    max-width: 370px;
+    margin: auto;
+    background-color: #e1cca2;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    box-shadow: 5px 1px 15px grey;
+    display: flex;
+   
+}
+.profile-pic img{
+    width: 50%;
+border-top-left-radius: 20px;
+border-bottom-left-radius: 20px;  
+}
+.profile-pic:hover{
+    transform: scale(1.06);
+
+}
+.profile-desc{
+    padding: 20px;
+   
+}
+.profile-desc p{
+    font-size: 0.8rem;
+}
+.scenarios{
+    text-align: start;
+}
+/* Typography */
+.title-typo{
+    margin-bottom: 50px;
+    margin-top: 40px;
+}
+main{
+    margin-bottom: 65px;
+}
+
+table, th, td{
+    border: 2px solid black;
+    width: 350px;
+    margin: auto;
+}
+
+th{
+    background-color: 
+#bb8d40;
+    color: #fcf4e5;
+}
+
+/* media Queries */
+
+@media only screen and (min-width: 1024px) {
+   /* home */
+    header{
+    height: 120px;
+
+   }
+    nav{
+        display: flex;
+        justify-content: space-around;
+    }
+    .navbar ul{
+        display: flex;
+        flex-direction: row;
+        gap: 60px;
+        align-items: center;
+        margin-top: 40px;
+    }
+  .logo img{
+    width: 300px;
+
+
+  }
+  main{
+    max-width: 1100px;
+    margin:50px auto ;
+    text-align: start;
+    
+  }
+  .site-name, .site-title, .site-purpose, .save, .connect, .domain-name{
+    margin-bottom: 35px;
+  }
+  .save h3, .connect h3{
+    margin-bottom: 20px;
+  }
+/* Target Audience */   
+.profiles{
+display: flex;
+}
+/* Typography */
+.title-typo{
+    text-align: center;
+    margin-bottom: 40px;
+}
+/* Color Scheme */
+
+.color-scheme{
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+.color-scheme h1{
+margin-bottom: 40px;
+margin-top: 20px;
+}
+}
