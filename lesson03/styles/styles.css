@@ -7,6 +7,10 @@
 body{
     font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
+        min-height: 100vh;
+ 
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 header{
     background-color:#e1cca2 ;
