@@ -1,8 +1,4 @@
 const images = document.querySelectorAll('img');
-// images.forEach((image) => {
-//   const actualImg = image.getAttribute('data-src');
-//   image.src = actualImg;
-// });
 
 let imgOptions = {};
 
