@@ -1,0 +1,22 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+h1 {
+  margin-bottom: 40px;
+}
+picture {
+  margin-bottom: 300px;
+}
+img {
+  border: 3px solid black;
+}
