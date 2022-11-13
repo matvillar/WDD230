@@ -49,7 +49,7 @@ function displayProphets(prophet) {
   card.appendChild(h2);
   card.appendChild(paragraph);
   card.appendChild(paragraph2);
-  card.appendChild(divPic);
+  card.appendChild(portrait);
 
   // Add/append the existing HTML div with the cards class with the section(card)
   document.querySelector('div.cards').appendChild(card);
