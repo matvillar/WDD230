@@ -1,0 +1,48 @@
+@media screen and (min-width: 1024px) {
+  header {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.344);
+  }
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .social-links {
+    display: block;
+  }
+  .menu {
+    display: block;
+    left: 0;
+    top: 0;
+    background-color: transparent;
+    position: unset;
+  }
+  .menu ul {
+    flex-direction: row;
+  }
+  .menu ul a {
+    color: aliceblue;
+  }
+
+  .logo img {
+    width: 150px;
+    height: auto;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+
+  /* showcase */
+  .container {
+    width: 1100px;
+  }
+  .showcase {
+    height: 100vh;
+  }
+  /* products */
+}

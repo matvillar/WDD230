@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+/* header navbar */
+header {
+  background-color: #749c5c;
+
+  display: inline-block;
+  width: 100%;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.logo img {
+  width: 100px;
+  height: auto;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+}
+ul li {
+  list-style-type: none;
+  padding: 20px;
+}
+ul a {
+  text-decoration: none;
+  color: #54843c;
+  text-transform: uppercase;
+}
+.menu {
+  position: fixed;
+  flex-direction: column;
+  background-color: #f4fcef;
+  text-align: center;
+  transition: 0.3s;
+  left: -100%;
+  width: 100%;
+  top: 105px;
+  z-index: 2;
+  padding: 20px;
+}
+.menu.active {
+  left: 0;
+}
+.social-links {
+  display: none;
+}
+/* burger menu */
+.bar {
+  display: block;
+  width: 30px;
+  height: 5px;
+  margin: 5px 0;
+  background-color: rgb(250, 250, 250);
+  transition: all 0.3s ease;
+}
+.burger-menu {
+  cursor: pointer;
+}
+.burger-menu.active .bar:nth-child(2) {
+  opacity: 0;
+}
+.burger-menu.active .bar:nth-child(1) {
+  transform: translateY(10px) rotate(45deg);
+}
+.burger-menu.active .bar:nth-child(3) {
+  transform: translateY(-10px) rotate(-45deg);
+}
+/* social media */
+.social-links img {
+  height: 30px;
+}
+
+/* Showcase Hero */
+h2 {
+  font-family: 'Lobster', cursive;
+  font-size: 2.5rem;
+  margin: 100px 0 30px 0;
+  color: #54843c;
+}
+
+.showcase img {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Our products */
+.title-products {
+  text-align: center;
+}
+.products {
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.cards {
+  display: flex;
+  flex-direction: row;
+  margin: 10px auto;
+}
+.card-product {
+  min-width: 375px;
+  background-color: #f4fcef;
+  text-align: center;
+  border-radius: 15px;
+  margin: 40px;
+}
+.card-product img {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.bot-card-product {
+  padding: 20px;
+}
+.bot-card-product h3 {
+  color: #ec9c05;
+  text-transform: uppercase;
+  padding: 20px;
+  font-size: 1.4rem;
+}
+.btn {
+  background-color: #54843c;
+  padding: 10px;
+  width: 140px;
+  display: inline-block;
+  margin-top: 30px;
+  border-radius: 10px;
+  border-bottom: 4px #002900 solid;
+  transition: all ease-in-out 0.2s;
+}
+.btn:hover {
+  opacity: 0.9;
+}
+.btn:active {
+  opacity: 1;
+  transform: translateY(4px);
+  border: #54843c;
+}
+.btn a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* ads Feel better */
+.feel-better img {
+  width: 100%;
+  height: auto;
+}
+
+/* About us */
+.about-us {
+  text-align: center;
+}
