@@ -1,0 +1,204 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  min-height: 100vh;
+
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+header {
+  background-color: #f7faec;
+  height: 140px;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+h1 {
+  font-size: 1.8rem;
+}
+h2 {
+  font-size: 1.3rem;
+}
+p {
+  font-family: 'Roboto', sans-serif;
+}
+span {
+  color: #648c40;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.logo img {
+  width: 150px;
+}
+nav {
+  text-align: center;
+  padding-bottom: 10px;
+}
+.navbar li {
+  margin-bottom: 10px;
+}
+
+.active {
+  padding: 5px 10px;
+  background-color: #54843c;
+  display: inline-block;
+  border-radius: 20px;
+  color: aliceblue;
+}
+main {
+  text-align: center;
+  padding: 20px;
+}
+.site-title {
+  margin-bottom: 15px;
+}
+.site-name {
+  margin-bottom: 15px;
+}
+.site-purpose {
+  margin-bottom: 15px;
+}
+.connect,
+.save {
+  margin-bottom: 15px;
+}
+footer {
+  background-color: #f7faec;
+  text-align: center;
+}
+/* Target Audience */
+.personas {
+  margin-top: 20px;
+}
+.personas h2 {
+  color: #648c40;
+  text-transform: uppercase;
+}
+.vision {
+  border: 3px solid #648c40;
+  padding: 20px;
+  background-color: #f7faec;
+  margin-bottom: 30px;
+}
+.vision h2 {
+  font-style: italic;
+  color: #3e642b;
+}
+
+.profiles {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.profile-pic {
+  transition: all 0.5s ease-in-out;
+
+  background-color: #f7faec;
+
+  box-shadow: 5px 1px 15px grey;
+}
+.profile-card {
+  width: 375px;
+  height: 400px;
+}
+.profile-pic img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.profile-pic:hover {
+  transform: scale(1.06);
+}
+.profile-desc {
+  padding: 20px;
+}
+.profile-desc p {
+  font-size: 0.8rem;
+}
+.scenarios {
+  text-align: start;
+}
+/* Typography */
+.title-typo {
+  margin-bottom: 50px;
+  margin-top: 40px;
+}
+main {
+  margin-bottom: 65px;
+}
+
+table,
+th,
+td {
+  border: 2px solid black;
+  width: 350px;
+  margin: auto;
+}
+
+th {
+  background-color: #3e642b;
+  color: #fcf4e5;
+}
+
+/* media Queries */
+
+@media only screen and (min-width: 1024px) {
+  /* home */
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+  }
+  .navbar ul {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  main {
+    max-width: 1100px;
+    margin: 50px auto;
+    text-align: start;
+  }
+  .site-name,
+  .site-title,
+  .site-purpose,
+  .save,
+  .connect,
+  .domain-name {
+    margin-bottom: 35px;
+  }
+  .save h3,
+  .connect h3 {
+    margin-bottom: 20px;
+  }
+
+  /* Typography */
+  .title-typo {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  /* Color Scheme */
+
+  .color-scheme {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .color-scheme h1 {
+    margin-bottom: 40px;
+    margin-top: 20px;
+  }
+}
