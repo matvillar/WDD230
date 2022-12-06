@@ -8,24 +8,42 @@
   .navbar {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
   }
   .social-links {
     display: block;
   }
+  nav {
+    display: flex;
+  }
   .menu {
-    display: block;
-    left: 0;
-    top: 0;
+    align-items: center;
     background-color: transparent;
     position: unset;
+    margin-right: 140px;
   }
   .menu ul {
     flex-direction: row;
   }
   .menu ul a {
     color: aliceblue;
+  }
+  .menu li div {
+    width: 5px;
+    height: 5px;
+    background-color: whirte;
+    margin-bottom: 5px;
+    border-radius: 50%;
+  }
+
+  .menu li a:hover::before {
+    content: '';
+    position: absolute;
+    background-color: aliceblue;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    left: 483px;
+    top: 85px;
   }
 
   .logo img {
