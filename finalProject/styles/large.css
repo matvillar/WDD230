@@ -2,8 +2,12 @@
   header {
     width: 100%;
     height: auto;
-    position: fixed;
-    background-color: rgba(0, 0, 0, 0.344);
+
+    background-color: #fff;
+  }
+  .showcase img {
+    top: 150px;
+    position: absolute;
   }
   .navbar {
     display: flex;
@@ -11,7 +15,19 @@
   }
   .social-links {
     display: block;
+    display: flex;
+    align-items: center;
   }
+  .social-links img {
+    margin-left: 10px;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+  }
+  .social-links img:hover {
+    transform: scale(1.1);
+    opacity: 0.7;
+  }
+
   nav {
     display: flex;
   }
@@ -25,7 +41,8 @@
     flex-direction: row;
   }
   .menu ul a {
-    color: aliceblue;
+    color: #54843c;
+    transition: all ease-in 0.1s;
   }
   .menu li div {
     width: 5px;
@@ -34,16 +51,13 @@
     margin-bottom: 5px;
     border-radius: 50%;
   }
+  .selected {
+    border-bottom: #54843c 3px solid;
+  }
 
-  .menu li a:hover::before {
-    content: '';
-    position: absolute;
-    background-color: aliceblue;
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-    left: 483px;
-    top: 85px;
+  .menu li a:hover {
+    border-bottom: #54843c 3px solid;
+    opacity: 0.7;
   }
 
   .logo img {
@@ -62,5 +76,40 @@
   .showcase {
     height: 100vh;
   }
-  /* products */
+
+  .call-action {
+    z-index: 100;
+    color: #fff;
+    position: absolute;
+    left: 80px;
+    top: 200px;
+    display: flex;
+    flex-direction: column;
+  }
+  .call-action p {
+    top: 300px;
+    top: 70px;
+    font-size: 1.5rem;
+    font-weight: bolder;
+  }
+  .call-action h2 {
+    font-size: 5.5rem;
+  }
+  .btn-light {
+    font-size: 1rem;
+    width: 140px;
+  }
+
+  /* Footer */
+  footer {
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+  }
+  .top-footer {
+    display: flex;
+    align-items: center;
+  }
 }

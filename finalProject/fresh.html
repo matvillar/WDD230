@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Welcome to " />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+    <title>Bountiful Foods | Fresh</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <img src="images/logos/logo.png" alt="White Logo" />
+        </div>
+        <nav>
+          <div class="menu">
+            <ul class="menu-links">
+              <li class="menu-link">
+                <div></div>
+                <a href="">Home</a>
+              </li>
+
+              <li class="menu-link">
+                <div></div>
+                <a class="selected" href="">Fresh</a>
+              </li>
+
+              <li class="menu-link">
+                <div></div>
+                <a href="">About Us</a>
+              </li>
+
+              <li class="menu-link">
+                <div></div>
+                <a href="">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="social-links">
+            <img src="images/facebook-green.svg" alt="facebook link" />
+            <img src="images/instagram.svg" alt="facebook link" />
+            <img src="images/linkedin-circled.svg" alt="facebook link" />
+          </div>
+        </nav>
+
+        <div class="burger-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </header>
+    <section class="showcase-form">
+      <div class="form-card">
+        <h2>Make Your Own Drink</h2>
+        <form action="thankyou.html" method="get">
+          <div class="form-control">
+            <input
+              type="text"
+              name="firstName"
+              placeholder="First Name"
+              required
+            />
+          </div>
+
+          <div class="form-control">
+            <input
+              type="email"
+              name="email"
+              placeholder="mymail@email.com"
+              required
+            />
+          </div>
+          <div class="form-control">
+            <input
+              type="tel"
+              name="cellPhone"
+              placeholder="Cell Phone"
+              required
+            />
+          </div>
+          <div class="fruit-scroll">
+            <label for="fruits">Choose 3 ingredients:</label>
+            <select name="fruits" id="select-fruits"></select>
+          </div>
+          <div class="textarea">
+            <label for="specialDesc">Special Description:</label>
+            <textarea name="specialDesc" id="specialDesc" rows="5"></textarea>
+          </div>
+          <input type="submit" value="Send Request" class="btn" />
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div class="logo">
+        <img src="images/logos/logoWhite.png" alt="White Logo" />
+      </div>
+
+      <div class="social-links footer">
+        <img src="images/facebook-white.svg" alt="facebook link" />
+        <img src="images/instagram-white.svg" alt="facebook link" />
+        <img src="images/linkedin-white.svg" alt="facebook link" />
+      </div>
+
+      <div class="bot-footer">
+        <div class="copyright">
+          <p>&COPY 2022 ||<span id="year"></span> Bountiful Foods</p>
+        </div>
+        <div class="student"><h3>Matias Villar</h3></div>
+        <div class="project"><p>Final Project</p></div>
+      </div>
+    </footer>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/fresh.js"></script>
+  </body>
+</html>

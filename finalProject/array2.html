@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array 2</title>
+  </head>
+  <body>
+    <input type="button" value="Calc" onclick="test()" />
+    <div id="output"></div>
+    <script>
+      /* Defining Table
+       * Input: no user input
+       * Processing: Test the countEvens and multiply functions by calling them.
+       * Output: The values returned from the countEvens and multiply functions.
+       */
+      function countEvens(list) {
+        let arr = [];
+        list.forEach((num) => {
+          if (num % 2 === 0) {
+            arr.push(num);
+          }
+        });
+        // const sumNow = arr.reduce((acc, curr) => acc + curr, sum);
+        return arr.length;
+      }
+      function multiply(list, multiplier) {
+        const newList = [];
+        let numMult = 0;
+        list.forEach((num) => {
+          numMult = num * multiplier;
+          newList.push(numMult);
+        });
+        return newList;
+      }
+      function test() {
+        let list1 = [17, 8, 9, 5, 20];
+        let list2 = [12, 4, 8, 15, 17, 5, 20, 11];
+
+        // Test the countEvens function by calling it two times.
+        let count1 = countEvens(list1);
+        let count2 = countEvens(list2);
+
+        // Test the multiply function by calling it two times.
+        let mult1 = multiply(list1, 3);
+        let mult2 = multiply(list2, 2);
+
+        // Build a string to display to the user.
+        let output = count1 + '<br>' + count2 + '<br>' + mult1 + '<br>' + mult2;
+
+        // Display the output string for the user to see.
+        document.getElementById('output').innerHTML = output;
+      }
+    </script>
+  </body>
+</html>
