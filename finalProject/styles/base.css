@@ -14,6 +14,7 @@ header {
   display: inline-block;
   width: 100%;
 }
+
 .navbar {
   display: flex;
   justify-content: space-around;
@@ -84,6 +85,7 @@ ul a {
 }
 
 /* Showcase Hero */
+
 h2 {
   font-family: 'Lobster', cursive;
   font-size: 3rem;
@@ -245,6 +247,15 @@ h2 {
   border: 5px solid #ad7205;
   margin-top: 40px;
 }
+.contact-us img {
+  width: 50px;
+  height: auto;
+  border: #54843c 4px solid;
+}
+.contact-us {
+  display: flex;
+  flex-direction: column;
+}
 
 .leaf {
   position: absolute;
@@ -311,6 +322,12 @@ section {
   color: red;
   cursor: pointer;
 }
+/* location */
+.location {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
 /* Footer */
 footer {
   background-color: #54843c;
