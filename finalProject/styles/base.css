@@ -277,7 +277,7 @@ h2 {
   bottom: -10px;
 }
 /* Fresh page */
-section {
+.container-fresh {
   text-align: center;
   background-color: #f4fcef;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='34' height='44' viewBox='0 0 34 44'%3E%3Cg fill='%2354843c' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M1 6.2C.72 5.55.38 4.94 0 4.36v13.28c.38-.58.72-1.2 1-1.84A12.04 12.04 0 0 0 7.2 22 12.04 12.04 0 0 0 1 28.2c-.28-.65-.62-1.26-1-1.84v13.28c.38-.58.72-1.2 1-1.84A12.04 12.04 0 0 0 7.2 44h21.6a12.05 12.05 0 0 0 5.2-4.36V26.36A12.05 12.05 0 0 0 28.8 22a12.05 12.05 0 0 0 5.2-4.36V4.36A12.05 12.05 0 0 0 28.8 0H7.2A12.04 12.04 0 0 0 1 6.2zM17.36 23H12a10 10 0 1 0 0 20h5.36a11.99 11.99 0 0 1 0-20zm1.28-2H24a10 10 0 1 0 0-20h-5.36a11.99 11.99 0 0 1 0 20zM12 1a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 14a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3.46-2a2 2 0 1 0-3.47 2 2 2 0 0 0 3.47-2zm0-4a2 2 0 1 0-3.47-2 2 2 0 0 0 3.47 2zM12 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3.46 2a2 2 0 1 0 3.47-2 2 2 0 0 0-3.47 2zm0 4a2 2 0 1 0 3.47 2 2 2 0 0 0-3.47-2zM24 43a10 10 0 1 0 0-20 10 10 0 0 0 0 20zm0-14a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3.46 2a2 2 0 1 0 3.47-2 2 2 0 0 0-3.47 2zm0 4a2 2 0 1 0 3.47 2 2 2 0 0 0-3.47-2zM24 37a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3.46-2a2 2 0 1 0-3.47 2 2 2 0 0 0 3.47-2zm0-4a2 2 0 1 0-3.47-2 2 2 0 0 0 3.47 2z'/%3E%3C/g%3E%3C/svg%3E");
@@ -287,15 +287,36 @@ section {
   max-width: 400px;
   text-align: center;
   width: 100%;
-  margin: 40px auto;
+  margin: 50px auto;
   border-radius: 10px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
   padding: 40px;
 }
 .form-control {
   margin: 20px 0;
-
   position: relative;
+}
+.fruit-scroll {
+  display: flex;
+  flex-direction: column;
+}
+#firstName {
+  text-transform: uppercase;
+  color: #54843c;
+}
+.nutrition {
+  border: #000000 4px solid;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.nutrition p {
+  border-bottom: #000 2px solid;
+  text-align: start;
+}
+.nutrition span {
+  color: #54843c;
+  font-weight: bold;
 }
 .form-card input[type='text'],
 .form-card input[type='tel'],
@@ -308,6 +329,17 @@ section {
 }
 .form-card input {
   margin-bottom: 20px;
+}
+.submit-card {
+  background-color: #fff;
+  max-width: 400px;
+  text-align: center;
+  width: 100%;
+  margin: 40px auto;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  display: none;
 }
 .fruit-options {
   text-align: center;
@@ -340,27 +372,14 @@ section {
   padding-right: 20px;
 }
 .weather h2 {
-  font-size: 1.9rem;
-  text-transform: uppercase;
   text-align: center;
 }
 
-.top-card {
+.top-weather {
   display: flex;
   justify-content: center;
   text-align: center;
   margin: 20px 0 20px 0;
-}
-
-.windchill p {
-  color: #696767;
-  font-size: 1.3rem;
-  align-items: flex-start;
-  padding: 20px;
-}
-.windchill span {
-  color: #9c1d25;
-  font-size: 1.5;
 }
 
 /* Footer */

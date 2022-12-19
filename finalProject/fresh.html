@@ -17,111 +17,136 @@
     <title>Bountiful Foods | Fresh</title>
   </head>
   <body>
-    <header>
-      <div class="navbar">
+    <div class="container-fresh">
+      <header>
+        <div class="navbar">
+          <div class="logo">
+            <img src="images/logos/logo.png" alt="White Logo" />
+          </div>
+          <nav>
+            <div class="menu">
+              <ul class="menu-links">
+                <li class="menu-link">
+                  <div></div>
+                  <a href="https://matvillar.github.io/WDD230/finalProject/"
+                    >Home</a
+                  >
+                </li>
+
+                <li class="menu-link">
+                  <div></div>
+                  <a
+                    class="selected"
+                    href="https://matvillar.github.io/WDD230/finalProject/fresh.html"
+                    >Fresh</a
+                  >
+                </li>
+
+                <li class="menu-link">
+                  <div></div>
+                  <a href="#about">About Us</a>
+                </li>
+              </ul>
+            </div>
+            <div class="social-links">
+              <img src="images/facebook-green.svg" alt="facebook link" />
+              <img src="images/instagram.svg" alt="facebook link" />
+              <img src="images/linkedin-circled.svg" alt="facebook link" />
+            </div>
+          </nav>
+
+          <div class="burger-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </header>
+      <section class="showcase-form">
+        <div class="form-card">
+          <h2>Make Your Own Drink</h2>
+          <form>
+            <div class="form-control">
+              <input
+                type="text"
+                name="firstName"
+                placeholder="First Name"
+                required
+                id="fName"
+              />
+            </div>
+
+            <div class="form-control">
+              <input
+                type="email"
+                name="email"
+                placeholder="mymail@email.com"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <input
+                type="tel"
+                name="cellPhone"
+                placeholder="Cell Phone"
+                required
+              />
+            </div>
+            <div class="fruit-scroll">
+              <label for="fruits">Choose 3 ingredients:</label>
+              <select name="fruits1" id="select-fruits1"></select>
+              <select name="fruits2" id="select-fruits2"></select>
+              <select name="fruits3" id="select-fruits3"></select>
+            </div>
+            <div class="textarea">
+              <label for="specialDesc">Special Description:</label>
+              <textarea name="specialDesc" id="specialDesc" rows="5"></textarea>
+            </div>
+            <input type="submit" value="Send Request" class="btn" />
+          </form>
+        </div>
+        <div class="submit-card">
+          <h3>Thank you for your purchase <span id="firstName"></span>!</h3>
+          <h4>Purchase Details:</h4>
+          <p>- <span id="ingredient1"></span></p>
+          <p>- <span id="ingredient2"></span></p>
+          <p>- <span id="ingredient3"></span></p>
+          <div class="nutrition">
+            <h4>Nutrition Facts:</h4>
+            <p>Total Carbs <span id="totalC"></span></p>
+            <p>Total Proteins <span id="totalP"></span></p>
+            <p>Total Fats <span id="totalF"></span></p>
+            <p>Total Calories <span id="totalCalories"></span></p>
+            <p>Total Sugars <span id="totalS"></span></p>
+          </div>
+          <div class="btn">
+            <a href="https://matvillar.github.io/WDD230/finalProject/"
+              >Return to Home</a
+            >
+          </div>
+        </div>
+      </section>
+      <footer>
         <div class="logo">
-          <img src="images/logos/logo.png" alt="White Logo" />
+          <img src="images/logos/logoWhite.png" alt="White Logo" />
         </div>
-        <nav>
-          <div class="menu">
-            <ul class="menu-links">
-              <li class="menu-link">
-                <div></div>
-                <a href="https://matvillar.github.io/WDD230/finalProject/"
-                  >Home</a
-                >
-              </li>
 
-              <li class="menu-link">
-                <div></div>
-                <a
-                  class="selected"
-                  href="https://matvillar.github.io/WDD230/finalProject/fresh.html"
-                  >Fresh</a
-                >
-              </li>
-
-              <li class="menu-link">
-                <div></div>
-                <a href="#about">About Us</a>
-              </li>
-            </ul>
-          </div>
-          <div class="social-links">
-            <img src="images/facebook-green.svg" alt="facebook link" />
-            <img src="images/instagram.svg" alt="facebook link" />
-            <img src="images/linkedin-circled.svg" alt="facebook link" />
-          </div>
-        </nav>
-
-        <div class="burger-menu">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
+        <div class="social-links footer">
+          <img src="images/facebook-white.svg" alt="facebook link" />
+          <img src="images/instagram-white.svg" alt="facebook link" />
+          <img src="images/linkedin-white.svg" alt="facebook link" />
         </div>
-      </div>
-    </header>
-    <section class="showcase-form">
-      <div class="form-card">
-        <h2>Make Your Own Drink</h2>
-        <form action="thankyou.html" method="get">
-          <div class="form-control">
-            <input
-              type="text"
-              name="firstName"
-              placeholder="First Name"
-              required
-            />
-          </div>
 
-          <div class="form-control">
-            <input
-              type="email"
-              name="email"
-              placeholder="mymail@email.com"
-              required
-            />
+        <div class="bot-footer">
+          <div class="copyright">
+            <p>&COPY 2022 ||<span id="year"></span> Bountiful Foods</p>
           </div>
-          <div class="form-control">
-            <input
-              type="tel"
-              name="cellPhone"
-              placeholder="Cell Phone"
-              required
-            />
-          </div>
-          <div class="fruit-scroll">
-            <label for="fruits">Choose 3 ingredients:</label>
-            <select name="fruits" id="select-fruits"></select>
-          </div>
-          <div class="textarea">
-            <label for="specialDesc">Special Description:</label>
-            <textarea name="specialDesc" id="specialDesc" rows="5"></textarea>
-          </div>
-          <input type="submit" value="Send Request" class="btn" />
-        </form>
-      </div>
-    </section>
-    <footer>
-      <div class="logo">
-        <img src="images/logos/logoWhite.png" alt="White Logo" />
-      </div>
-
-      <div class="social-links footer">
-        <img src="images/facebook-white.svg" alt="facebook link" />
-        <img src="images/instagram-white.svg" alt="facebook link" />
-        <img src="images/linkedin-white.svg" alt="facebook link" />
-      </div>
-
-      <div class="bot-footer">
-        <div class="copyright">
-          <p>&COPY 2022 ||<span id="year"></span> Bountiful Foods</p>
+          <div class="student"><h3>Matias Villar</h3></div>
+          <div class="project"><p>Final Project</p></div>
         </div>
-        <div class="student"><h3>Matias Villar</h3></div>
-        <div class="project"><p>Final Project</p></div>
-      </div>
-    </footer>
-    <script src="scripts/script.js"></script>
-    <script src="scripts/fresh.js"></script>
+      </footer>
+      <script src="scripts/script.js"></script>
+      <script src="scripts/fresh.js"></script>
+    </div>
   </body>
 </html>

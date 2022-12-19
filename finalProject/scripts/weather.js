@@ -1,5 +1,4 @@
-const windSpeed = document.getElementById('windSpeed');
-const windChillSpan = document.getElementById('windChill');
+const humidity = document.getElementById('humidity');
 const temperature = document.getElementById('temp');
 const cityName = document.getElementById('city-name');
 const weatherIcon = document.getElementById('weather-icon');
@@ -24,7 +23,8 @@ weatherApiFecth();
 function weatherDisplay(weatherData) {
   cityName.innerHTML = `${weatherData.name}`;
   temperature.innerHTML = `${weatherData.main.temp.toFixed(0)}`;
-  windSpeed.innerHTML = `${weatherData.wind.speed}`;
+  humidity.innerHTML = `${weatherData.main.humidity}`;
+
   const icon = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png
 
   `;
@@ -32,23 +32,6 @@ function weatherDisplay(weatherData) {
   const descString = String(desc);
   weatherDesc.textContent = descString;
 
-  const windChillFactor = () => {
-    const speedNum = weatherData.wind.speed;
-    const tempNum = parseFloat(weatherData.main.temp.toFixed(0));
-
-    if (tempNum <= 50 && speedNum >= 3) {
-      const formula =
-        35.74 +
-        0.6215 * tempNum -
-        35.75 * speedNum ** 0.16 +
-        0.4275 * tempNum * speedNum ** 0.16;
-      windChillSpan.innerHTML = formula.toFixed(0);
-    } else {
-      windChillSpan.innerHTML = 'N/A';
-    }
-  };
-
-  windChillFactor();
   weatherIcon.setAttribute('src', icon);
   weatherIcon.setAttribute('alt', desc);
 }
